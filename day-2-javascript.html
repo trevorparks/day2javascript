@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Day 2 JavaScript Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script src="./01classwork.js"></script>
+
+    <script>
+      //   let userPrompt = prompt("Input a random string of characters...");
+      //    for(i=3; i <= userPrompt.length; i++){
+      //       console.log(userPrompt[i]);
+      //    }
+
+      //   let max = 20
+      //   let randomNum = Math.floor(Math.random() * max) + 1
+      //   let userGuess = 0;
+      //   let userNum = parseInt(prompt(`Pick a random number between 1 and 20`))
+      //   while (userNum != randomNum) {
+      //     userNum = prompt(
+      //       'Sorry that was not the right number. Please pick another random number',
+      //     )
+      //     userGuess += 1;
+      //   }
+      //   alert(
+      //     `Congratulations! You picked the right number!  It was ${randomNum}. It took ${userGuess} tries to guess. Now go outside`,
+      //   )
+
+      //   for(i=1; i <= 5; i++){
+      //      let row = "";
+      //       for (let z = 1; z <= i; z++){
+      //         row += "*";
+
+      //       }
+      //       console.log(row);
+      //   }
+
+      // let counter = -1;
+      //     let heads = 0;
+      //     let tails = 1;
+      //     let coin;
+      // while(heads != coin){
+      //     coin = Math.floor(Math.random() * 2);
+      //     counter += 1;
+      //     console.log(`Sorry that was not the right number. Please pick another random number. Try number ${counter}`,
+      //     )
+      //   }
+      //   alert(
+      //     `Congratulations! Your coin landed on heads! It took ${counter} tries to get heads.`,
+      //   );
+
+      // let userName = prompt('What is your name....')
+      // let userNum = parseInt(prompt('Pick a number between 1-100....'))
+      // if (userNum % 2 === 0) {
+      //   console.log('Your number is even')
+      // } else {
+      //   console.log('Your number is odd')
+      // }
+      // if (userNum > 50) {
+      //   console.log('Your number is greater than 50')
+      // } else if (userNum < 50) {
+      //   console.log('Your number is less than 50')
+      // } else {
+      //   console.log('Your number is equal to 50')
+      // }
+      // for (i = 0; i <= userNum; i++) {
+      //   console.log(i)
+      // }
+      // let j = 100
+      // while (j >= userNum) {
+      //   console.log(j)
+      //   j -= 1
+      // }
+      // if (userName == 'Trevor' || userName == 'trevor') {
+      //   alert('Wow that is a fantastic name')
+      // } else {
+      //   alert('That name is okay')
+      // }
+
+      let a = [-1, -2, 2, 10, 7, 8]
+      let b = [4, -2, 2, 7, 9, 5]
+      let common = 0
+      for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < b.length; j++) {
+          if (a[i] === b[j]) {
+            common++
+          }
+        }
+      }
+      console.log(`There are ${common} items in common`)
+    </script>
+  </body>
+</html>
